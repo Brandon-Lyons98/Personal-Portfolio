@@ -1,5 +1,4 @@
 body {
-  background-color: white;
   overflow-x: hidden;
 }
 
@@ -19,19 +18,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .about-wrapper {
-  width: 100%;
+  width: 100vw;
 }
 
 .name {
   font-size: 3rem;
   font-weight: 200;
-  padding: 0.1rem;
   margin: 0;
   font-family: 'Times New Roman', serif;
   text-shadow: 3px 3px 2px rgb(182, 182, 182);
@@ -53,11 +50,6 @@ header {
   background-color: whitesmoke;
   box-shadow: 4px 4px 4px rgb(182, 182, 182);
   padding: 0.25rem 1.5rem;
-  min-width: 300px;
-}
-
-.about-me-para > h2 {
-  margin: 0;
 }
 
 .grid {
@@ -182,21 +174,14 @@ header {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .headshot {
-    float: none;
-  }
-
-  .about-me-para {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-  }
 }
 
 @media (max-width: 415px) {
+  * {
+    overflow-x: hidden;
+  }
+  
   .headshot {
-    width: 200px;
     margin-top: 2rem;
     float: none;
   }
@@ -210,10 +195,10 @@ header {
     flex-direction: column;
     margin: 0 auto;
     font-size: 1.2rem;
-    width: 80%;
   }
-
+  
   .about-me-para > h2 {
+    width: 80%;
     font-size: 1.2rem;
   }
 
@@ -221,7 +206,7 @@ header {
     grid-template-columns: 1fr;
   }
 
-  footer {
+  .contact {
     padding: 0;
     margin: 0;
   }
