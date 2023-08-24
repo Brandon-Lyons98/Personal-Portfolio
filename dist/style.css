@@ -177,10 +177,14 @@ header {
 }
 
 @media (max-width: 415px) {
-  * {
-    overflow-x: hidden;
+  .background {
+    height: 70%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(0) translateY(0);
   }
-  
+
   .headshot {
     margin-top: 2rem;
     float: none;
@@ -207,7 +211,13 @@ header {
   }
 
   .contact {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.75rem;
+    margin: 1rem 0;
+  }
+
+  .footer-img {
+    width: 150px;
   }
 }
